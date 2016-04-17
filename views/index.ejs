@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="nmAppDirectory">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <% include scripts.ejs %>
+    <script type="text/javascript" src="/config"></script>
+    <% include ../public/javascripts/nm.adx.const.js %>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>You are viewing <%= page %></p>
+    <% include plain.html %>
+  </body>
+</html>
