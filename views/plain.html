@@ -1,3 +1,12 @@
 <span ng-controller="adxMainCtrl">
-  <p>You are viewing the {{app.name}} app</p>
+  <p>This is where the magic happens.</p>
+  <div class="server-variables">
+    <h2>Here are the server variables available through the app constants:</h2>
+    <code>{</code>
+    <pre ng-repeat="(key,value) in config">
+      <code class="language-javascript">{{key}} : {{value}}</code>{{ $index != (config | length) - 1 ? ',' : null }}
+    </pre>
+    <code>}</code>
+    
+  </div>
 </span>

@@ -1,5 +1,7 @@
 <script>
-angular
-  .module('nmAppDirectory')
-  .value('appName', config.appName)
+  (function() {
+    angular
+      .module('nmAppDirectory')
+      .constant('config', server);
+  })();
 </script>

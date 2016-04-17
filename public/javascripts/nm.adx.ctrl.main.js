@@ -5,12 +5,10 @@
     .module('nmAppDirectory')
     .controller('adxMainCtrl', adxMainCtrl);
 
-    adxMainCtrl.$inject = [ '$scope', 'appName'];
+    adxMainCtrl.$inject = [ '$scope', 'config' ];
 
-    function adxMainCtrl ($scope, appName) {
-      $scope.app = {
-        name : appName
-      }
+    function adxMainCtrl ($scope, config) {
+      $scope.config = config;
     }
 
 })();
