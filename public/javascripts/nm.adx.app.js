@@ -1,12 +1,13 @@
 (function() {
-  var app = angular.module('nmAppDirectory', ['ngResource', 'ui.router'])
-    app.config(ApplicationState);
+  var app = angular.module('nmAppDirectory', [])
+  
+    // app.config(ApplicationState);
 
-    ApplicationState.$inject = ['$stateProvider', '$urlRouterProvider'];
+    // ApplicationState.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-    function ApplicationState() {
-      
-    }
+    // function ApplicationState() {
+
+    // }
 
     app.run(keyLength);
 
