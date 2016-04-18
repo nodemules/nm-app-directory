@@ -9,6 +9,9 @@
 
     function adxMainCtrl ($scope) {
       $scope.config = 'config';
+      $scope.views = {
+        serverVariables : '../views/_serverVariables.html'
+      };
     }
 
 })();

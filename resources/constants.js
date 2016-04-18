@@ -1,16 +1,12 @@
-var express = require('express');
-var constants = {};
+var express = require('express'),
+    json = require('./json'),
+    constants = {}
+    ;
 
 /*
  * This file will be used to define server constants
  */
 
-const server = {
-  appName:'Node Mules Application Directory',
-  title:'Node Mules App Directory',
-  page:'index.html'
-}
-
-constants.server = server;
+constants.server = json.getConfig('config.json');
 
 module.exports = constants;
