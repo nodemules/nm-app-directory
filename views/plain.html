@@ -1,4 +1,4 @@
 <span ng-controller="adxMainCtrl">
-  <p>This is where the magic happens.</p>
-  <span ng-include="views.serverVariables"></span>
+  <span ng-if="ctrl.viewServerVariables" ng-include="views.serverVariables"></span>
+  <span ng-include="views.apps"></span>
 </span>

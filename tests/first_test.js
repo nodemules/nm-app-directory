@@ -31,7 +31,8 @@ describe('testing angular stuff >>>', function() {
 
     it('intializes the controller', function() {
       expect(controller).toBeDefined();
-      expect($scope.config).toEqual('config');
+      expect(Object.keys($scope.views).length).toEqual(2);
+      expect($scope.ctrl.viewServerVariables).toBe(false);
     });
 
   });

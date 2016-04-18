@@ -7,6 +7,6 @@ var express = require('express'),
  * This file will be used to define server constants
  */
 
-constants.server = json.getConfig('config.json');
+constants.server = json.readFile('config.json');
 
 module.exports = constants;

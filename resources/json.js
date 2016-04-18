@@ -12,7 +12,7 @@ function readJsonFileSync(filepath, encoding){
     return JSON.parse(file);
 }
 
-json.getConfig = function (file){
+json.readFile = function (file){
 
     var filepath = __dirname + '/' + file;
     return readJsonFileSync(filepath);

@@ -1,9 +1,11 @@
 <div class="server-variables" ng-controller="adxServerCtrl">
   <h2>Here are the server variables:</h2>
-  <code>{</code>
-  <pre ng-repeat="(key,value) in config">
-    <code class="language-javascript">{{key}} : {{value}}</code>{{ $index != (config | length) - 1 ? ',' : null }}
+  <pre>
+    <code>{
+      <span ng-repeat="(key,value) in config">
+        <span class="language-javascript">{{key}} : {{value}}</span>{{ $index != (config | length) - 1 ? ',' : null }}
+      </span>
+    }</code>
   </pre>
-  <code>}</code>
   <p>They are made available through the app constants</p>
 </div>
