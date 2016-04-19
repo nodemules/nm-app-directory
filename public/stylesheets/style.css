@@ -25,6 +25,9 @@ body {
   overflow: hidden;
 }
 
+.app-card .app-img img{
+  margin: 0 auto;
+}
 
 .cl-effect-13 a {
   -webkit-transition: color 0.3s;

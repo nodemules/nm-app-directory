@@ -1,5 +1,7 @@
 <span ng-controller="adxMainCtrl">
   <div class="title col-xs-12"><a href="http://www.nodemules.com">NODE MULES</a></div>
-  <span ng-if="ctrl.viewServerVariables" ng-include="views.serverVariables"></span>
-  <span ng-include="views.apps"></span>
+  <div ng-if="ctrl.viewServerVariables" ng-include="views.serverVariables"></div>
+  <div class="row">
+    <div class="col-xs-12" ng-include="views.apps"></div>
+  </div>
 </span>
