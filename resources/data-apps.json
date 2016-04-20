@@ -3,12 +3,18 @@
     {
       "title"       : "Movie Challenge",
       "url"         : "http://movie-challenge.nodemules.com/",
-      "image_url"   : "http://i.imgur.com/aw2T8bB.png"
+      "image_url"   : "http://i.imgur.com/aw2T8bB.png",
+      "github"      : {
+        "url"       : "https://github.com/nodemules/moviechallenge"
+      }
     },
     {
       "title"       : "Papa Flappy",
       "url"         : "http://papa-flappy.nodemules.com/",
-      "image_url"   : "http://i.imgur.com/FYwujf1.png"
+      "image_url"   : "http://i.imgur.com/FYwujf1.png",
+      "github"      : {
+        "url"       : "https://github.com/nodemules/nm-papa-flappy"
+      }
     }
   ]
 }

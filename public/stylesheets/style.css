@@ -6,10 +6,38 @@
     box-sizing: border-box;
 }
 
-span a {
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  span a, div.text-right {
+    font-size: 3.5vw !important;
+    line-height: 2em;
+  }
+}
+
+div.text-right .fa {
   position: relative;
   display: inline-block;
-  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1.35em;
+}
+
+.cl-hover div.text-right a {
+  color: inherit !important;
+}
+
+.app-link:hover, .app-link:hover * {
+  color: #FF5722 !important;
+  text-shadow: 4px 4px 6px rgba(0,0,0,0.8) !important;
+}
+
+span a.cl-effect  {
+  position: relative;
+  display: inline-block;
   outline: none;
   color: #fff;
   text-decoration: none;
@@ -24,11 +52,14 @@ span a:hover,
 span a:focus {
   outline: none !important;
   text-decoration: none !important;
-}body {
+}
+
+body {
   padding: 50px;
   font-size: 14px;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #3A3F44;
+  color: #888D92;
 }
 
 .title a {
@@ -37,17 +68,20 @@ span a:focus {
 
 .app-card {
   height : 30vh;
+  margin-bottom: 15px;
 }
 
 .app-card .app-title {
   height: 30% !important;
 }
+
 .app-title h1 {
   text-align: center;
 }
 
 .app-card .app-img {
   height: 80%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -58,6 +92,11 @@ span a:focus {
 .app-card .app-img img:hover,
 .app-card .app-img img.hover {
   border: 2px #FF5722 solid;
+}
+
+.text-right {
+  margin-top: 12px;
+  padding: 0px 12px 6px;
 }
 
 .cl-effect-13 a {
@@ -100,39 +139,42 @@ span a:focus {
   text-decoration: none !important;
 }
 
-.cl-effect-6 a:hover::before,
-.cl-effect-6 a:focus::before,
+.cl-effect-6 a.cl-effect:hover::before,
+.cl-effect-6 a.cl-effect:focus::before,
 .cl-effect-6.cl-hover a::before {
   color: #fff;
   text-shadow: 10px 0 #fff, -10px 0 #fff;
 }
-.cl-effect-6 a:hover::before,
-.cl-effect-6 a:focus::before,
-.cl-effect-6 a:hover,
-.cl-effect-6 a:focus,
+.cl-effect-6 a.cl-effect:hover::before,
+.cl-effect-6 a.cl-effect:focus::before,
+.cl-effect-6 a.cl-effect:hover,
+.cl-effect-6 a.cl-effect:focus,
 .cl-effect-6.cl-hover a::before
 .cl-effect-6.cl-hover a {
   color: #fff;
   cursor: pointer;
 }
 
-.cl-effect-6 a:hover,
-.cl-effect-6 a:focus,
+.cl-effect-6 a.cl-effect:hover,
+.cl-effect-6 a.cl-effect:focus,
 .cl-effect-6.cl-hover a {
   text-decoration: none !important;
 }
 
-a {
+a, .fa {
   color: #888D92 !important;
 }
+
 a::before,a::after {
   background-color: #888D92 !important;
 }
 
-a:hover,.cl-effect-6.cl-hover a {
+a:hover,.cl-effect-6.cl-hover a, .fa:hover {
   color: #FF5722 !important;
   outline: none !important;
   text-decoration: !important;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8) !important;
+  cursor: pointer;
 }
 
 a:hover::before,a:hover::after,
@@ -146,12 +188,12 @@ a:focus, .cl-effect-6.cl-hover a {
   outline: none !important;
   text-decoration: none !important;
 }
-.cl-effect-6 a {
+.cl-effect-6 a.cl-effect {
   margin-top: 0px;
   padding: 10px 20px;
 }
 
-.cl-effect-6 a::before {
+.cl-effect-6 a.cl-effect::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,7 +206,7 @@ a:focus, .cl-effect-6.cl-hover a {
   transition: top 0.3s;
 }
 
-.cl-effect-6 a::after {
+.cl-effect-6 a.cl-effect::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -177,14 +219,14 @@ a:focus, .cl-effect-6.cl-hover a {
   transition: height 0.3s;
 }
 
-.cl-effect-6 a:hover::before,
+.cl-effect-6 a.cl-effect:hover::before,
 .cl-effect-6.cl-hover a::before {
   top: 100%;
   opacity: 1;
   height: 4px;
 }
 
-.cl-effect-6 a:hover::after,
+.cl-effect-6 a.cl-effect:hover::after,
 .cl-effect-6.cl-hover a::after {
   margin-top: -1px;
   height: 102%;
