@@ -1,8 +1,9 @@
 <div class="col-md-6 app-card" ng-repeat="app in apps">
   <div class="app-img">
-    <a ng-href="{{app.url}}"><img class="img-responsive center-block" ng-src="{{app.image_url}}" title="{{app.title}}" /></a>
+    <a ng-href="{{app.url}}"><img class="img-responsive center-block" ng-class="{ 'hover' : app.hover }" 
+      ng-mouseover="app.hover=true" ng-mouseleave="app.hover=false" ng-src="{{app.image_url}}" title="{{app.title}}" /></a>
   </div>
   <div class="app-title">
-    <span class="cl-effect-6"><a ng-href="{{app.url}}">{{app.title}}</h1></span>
+    <span class="cl-effect-6" ng-class="{ 'cl-hover' : app.hover }"><a ng-href="{{app.url}}" ng-mouseover="app.hover=true" ng-mouseleave="app.hover=false">{{app.title}}</h1></span>
   </div>
 </div>
