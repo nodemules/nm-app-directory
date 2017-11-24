@@ -1,6 +1,22 @@
 {
   "apps": [
     {
+      "title"       : "Running Hearts Poker",
+      "url"         : "http://runningheartspoker.nodemules.com/",
+      "image_url"   : "http://i.imgur.com/0l2I4Hm.png",
+      "github"      : {
+        "url"       : "https://github.com/nodemules/runningheartsapp"
+      }
+    },
+    {
+      "title"       : "Steam Crawler",
+      "url"         : "http://steam-crawler.nodemules.com/",
+      "image_url"   : "https://i.imgur.com/wsG9f7Y.png",
+      "github"      : {
+        "url"       : "https://github.com/brenthaertlein/steam-crawler"
+      }
+    },
+    {
       "title"       : "Movie Challenge",
       "url"         : "http://movie-challenge.nodemules.com/",
       "image_url"   : "http://i.imgur.com/aw2T8bB.png",
